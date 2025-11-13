@@ -9,7 +9,7 @@ import org.jvnet.hudson.annotation_indexer.Index;
 
 import edu.umd.cs.findbugs.annotations.CheckForNull;
 import jakarta.inject.Inject;
-import javax.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.SQLException;

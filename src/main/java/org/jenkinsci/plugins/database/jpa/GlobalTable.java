@@ -3,7 +3,7 @@ package org.jenkinsci.plugins.database.jpa;
 import org.jenkinsci.plugins.database.GlobalDatabaseConfiguration;
 import org.jvnet.hudson.annotation_indexer.Indexed;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
