@@ -36,31 +36,16 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-dbcp2</artifactId>
-      <version>2.13.0</version>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>6.2.1</version>
     </dependency>
 
     <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-entitymanager</artifactId>
-      <version>5.6.15.Final</version>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>6.6.4.Final</version>
       <exclusions>
-        <!-- Provided by javax-activation-api plugin -->
-        <exclusion>
-          <groupId>javax.activation</groupId>
-          <artifactId>javax.activation-api</artifactId>
-        </exclusion>
-        <!-- Provided by jaxb plugin -->
-        <exclusion>
-          <groupId>javax.xml.bind</groupId>
-          <artifactId>jaxb-api</artifactId>
-        </exclusion>
-        <!-- Provided by jaxb plugin -->
-        <exclusion>
-          <groupId>org.glassfish.jaxb</groupId>
-          <artifactId>jaxb-runtime</artifactId>
-        </exclusion>
         <!-- Provided by byte-buddy api plugin -->
         <exclusion>
           <groupId>net.bytebuddy</groupId>
@@ -71,23 +56,13 @@
 
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
-      <artifactId>javax-activation-api</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>io.jenkins.plugins</groupId>
       <artifactId>byte-buddy-api</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>io.jenkins.plugins</groupId>
-      <artifactId>jaxb</artifactId>
-    </dependency>
-
-    <dependency>
-        <groupId>javax.validation</groupId>
-        <artifactId>validation-api</artifactId>
-        <version>2.0.1.Final</version>
+        <groupId>jakarta.validation</groupId>
+        <artifactId>jakarta.validation-api</artifactId>
+        <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.hibernate.validator</groupId>

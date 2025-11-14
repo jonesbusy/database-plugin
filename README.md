@@ -69,8 +69,8 @@ to allow the user to select a database (see
 
 ### JPA support
 
-This plugin exposes it through [JPA 2.0
-API](https://en.wikipedia.org/wiki/Java_Persistence_API) (internally, it
+This plugin exposes it through [JPA 
+API](https://en.wikipedia.org/wiki/Java_Persistence_API) using Jakarta Persistence (internally, it
 uses Hibernate but please do not rely on this fact if you can as it may
 change.) The entry point to the JPA support is the `PersistenceService`
 class, and this exposes methods for obtaining `EntityManagerFactory` for
@@ -84,6 +84,11 @@ global database, please put `@GlobalTable` in addition to `@Entity`.
 The following code shows how to use this to persiste a new row:
 
 ```java
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Column;
+import jakarta.persistence.EntityManager;
+
 public class Push {
     @Inject
     PersistenceService ps;
